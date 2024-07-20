@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap");
 :root {
-  --primary-color: #7380ec;
+  --primary-color: #3a3c4b;
   --btn-radius: 2px;
   --home-text-color-dark: #2f2e41;
   --home-text-color-light: #9893a3;
@@ -12,13 +12,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
 }
 
 body {
   overflow-x: hidden;
-}
+  background-position: center;
+  background-size: cover;
+  /*background-image: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?t=st=1721414679~exp=1721418279~hmac=4ba631132d27d6b380f6c8a41355d9ee70e00e9ea7271eadf735fe62ed68e170&w=996);
+  background-image: url(https://as1.ftcdn.net/v2/jpg/03/44/25/96/1000_F_344259654_f3WtFVrjUsqrElP1bbyvwhdvHHrfDRpi.jpg);*/
+  }
 
 html {
   scroll-behavior: smooth;
@@ -60,6 +65,7 @@ header {
   line-height: 53px;
   text-align: center;
   /*font-family: 'Satisfy', cursive;*/
+  font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -97,22 +103,25 @@ nav {
   color: var(--home-text-color-dark);
   font-size: 5.1rem;
   font-weight: bold;
-  font-family: "Playfair Display", serif;
+  /*font-family: "Playfair Display", serif;*/
+  font-family: 'Poppins', sans-serif;
   line-height: 5.5rem;
 }
+
+
 
 .header-content p {
   margin-top: 1.875rem;
   max-width: 470px;
   width: 100%;
-
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 2rem;
-
-  color: var(--home-text-color-light);
+  color:black;
+  /*color: var(--home-text-color-light);*/
 }
 
 .header-content a {
@@ -138,22 +147,25 @@ section.app-preview {
 
 h2.section-title {
   font-size: 3.75rem;
-  font-family: "Playfair Display", serif;
+  /*font-family: "Playfair Display", serif;*/
+  font-family: 'Poppins', sans-serif;
   max-width: 413px;
 }
+
 
 p.section-paragraph {
   margin-top: 1.875rem;
   max-width: 450px;
   width: 100%;
 
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 2rem;
-
-  color: var(--home-text-color-light);
+  color:black;
+  /*color: var(--home-text-color-light);*/
 }
 
 .get-started-line {
@@ -178,7 +190,7 @@ p.section-paragraph {
   top: 4px;
   bottom: 0%;
   z-index: 0;
-  border-bottom: 10px solid rgba(65, 241, 182, 0.5);
+  border-bottom: 10px solid rgba(37, 90, 72, 0.338);
 }
 
 /*============= Section Track your spending ======*/
@@ -194,18 +206,21 @@ p.section-paragraph {
 /*============= Section Get in touch with me ======*/
 .get-in-touch.container{
   background-color: transparent;
+  width:100%;
+  
 }
 
 .get-in-touch-content {
   background: var(--home-text-color-dark);
   padding: 5.25rem;
-
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
-  width: 70%;
-  margin: 10rem auto;
+  width: 100%;
+  margin: 10rem 0;
+  /*margin-left: 0;
+  margin-right: 0;*/
 }
 
 .get-in-touch-content h2.section-title {
@@ -228,7 +243,8 @@ section.get-in-touch a.get-started {
 
 footer {
   margin-top: -320px;
-  background: #ecebff;
+  /*background: #323030;*/
+  background: transparent;
   padding-left: 6rem;
   padding-right: 6rem;
   padding-top: 15rem;
@@ -254,12 +270,14 @@ footer {
 
 .footer-card h3 {
   margin-bottom: 1.125rem;
-  color: var(--home-text-color-dark);
+  color:white
+ /* color: var(--home-text-color-dark);*/
 }
 
 .footer-card a {
   text-decoration: none;
-  color: var(--text);
+  /*color: var(--text);*/
+  color:black;
   margin-bottom: 1rem;
   transition: color 0.3s ease;
 }
